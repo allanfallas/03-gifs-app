@@ -1,0 +1,15 @@
+<h2 class="text2xl font-bold mt-5">Buscar Gifs</h2>
+<h2 class="text-sm font-bold mt-5">Buscar gifs por nombre, description o tags</h2>
+
+
+<section class="flex flex-col gap-4">
+
+    <input type="text" placeholder="Buscar Gifs" class="mt3- border-gray-300 rouded-md p-2"
+        (keyup.enter)="onSearch(txtSearch.value)" #txtSearch />
+
+
+</section>
+
+<div class="p-5">
+    <app-gifs-list [gifList]="gifs()"></app-gifs-list>
+</div>
